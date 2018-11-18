@@ -8,7 +8,8 @@
  {
     "remote":      "github",  
     "repository":  "jmjxperia/android_device_yureka2",
-    "target_path": "device/yu/YUREKA2"
+    "target_path": "device/yu/YUREKA2",
+	"branch":      "rr"
   },
   {
     "remote":      "github",  
@@ -19,7 +20,8 @@
   { 
     "remote":      "github",  
     "repository":  "jmjxperia/android_vendor_yu_yureka2",
-    "target_path": "vendor/yu"
+    "target_path": "vendor/yu",
+	"branch":      "O"
   },
   { 
     "remote":      "github",  
