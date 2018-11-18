@@ -1,18 +1,30 @@
 [
  {
-   "repository": "android_device_yureka2",
-   "target_path": "device/yu/YUREKA2"
+   "remote":      "github", 
+   "repository":  "LineageOS/android_device_qcom_common",
+   "target_path": "device/qcom/common",
+   "branch":      "lineage-15.1"
  },
  {
-   "repository": "android_kernel_yureka2",
-   "target_path": "kernel/yu/msm8953"
- },
- {
-   "repository": "android_vendor_yu_yureka2",
-   "target_path": "vendor/yu"
- },
- {
-   "repository": "android_device_qcom_common",
-   "target_path": "device/qcom/common"
- }
+    "remote":      "github",  
+    "repository":  "jmjxperia/android_device_yureka2",
+    "target_path": "device/yu/YUREKA2"
+  },
+  {
+    "remote":      "github",  
+    "repository":  "jmjxperia/android_kernel_yureka2",
+    "target_path": "kernel/yu/msm8953",
+    "branch":      "Nosgoth-merged"
+  },
+  { 
+    "remote":      "github",  
+    "repository":  "jmjxperia/android_vendor_yu_yureka2",
+    "target_path": "vendor/yu"
+  },
+  { 
+    "remote":      "github",  
+    "repository":  "LineageOS/android_packages_resources_devicesettings",
+    "target_path": "packages/resources/devicesettings",
+    "branch":      "lineage-15.1"
+  }
 ]
