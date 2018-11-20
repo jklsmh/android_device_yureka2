@@ -6,17 +6,14 @@
    "branch":      "lineage-15.1"
  },
  {
-    "remote":      "github",  
     "repository":  "jmjxperia/android_device_yureka2",
     "target_path": "device/yu/YUREKA2"
   },
   {
-    "remote":      "github",  
     "repository":  "jmjxperia/android_kernel_yureka2",
     "target_path": "kernel/yu/msm8953"
   },
   { 
-    "remote":      "github",  
     "repository":  "jmjxperia/android_vendor_yu_yureka2",
     "target_path": "vendor/yu"
   },
