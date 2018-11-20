@@ -13,8 +13,7 @@
   {
     "remote":      "github",  
     "repository":  "jmjxperia/android_kernel_yureka2",
-    "target_path": "kernel/yu/msm8953",
-    "branch":      "Nosgoth-merged"
+    "target_path": "kernel/yu/msm8953"
   },
   { 
     "remote":      "github",  
