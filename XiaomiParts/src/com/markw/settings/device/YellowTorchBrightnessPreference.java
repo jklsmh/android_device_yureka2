@@ -15,7 +15,7 @@
 * along with this program. If not, see <http://www.gnu.org/licenses/>.
 *
 */
-package com.syberia.settings.device;
+package com.markw.settings.device;
 
 import android.content.ContentResolver;
 import android.content.Context;
@@ -32,7 +32,7 @@ import android.util.Log;
 
 import java.util.List;
 
-public class WhiteTorchBrightnessPreference extends SeekBarDialogPreference implements
+public class YellowTorchBrightnessPreference extends SeekBarDialogPreference implements
         SeekBar.OnSeekBarChangeListener {
 
     private SeekBar mSeekBar;
@@ -42,9 +42,9 @@ public class WhiteTorchBrightnessPreference extends SeekBarDialogPreference impl
     private float offset;
     private TextView mValueText;
 
-    private static final String FILE_BRIGHTNESS = "/sys/devices/soc/qpnp-flash-led-24/leds/led:torch_0/max_brightness";
+    private static final String FILE_BRIGHTNESS = "/sys/devices/soc/qpnp-flash-led-24/leds/led:torch_1/max_brightness";
 
-    public WhiteTorchBrightnessPreference(Context context, AttributeSet attrs) {
+    public YellowTorchBrightnessPreference(Context context, AttributeSet attrs) {
         super(context, attrs);
         mMinValue = 0;
         mMaxValue = 200;
@@ -88,7 +88,7 @@ public class WhiteTorchBrightnessPreference extends SeekBarDialogPreference impl
             return;
         }
 
-        String storedValue = PreferenceManager.getDefaultSharedPreferences(context).getString(DeviceSettings.KEY_WHITE_TORCH_BRIGHTNESS, "200"); 
+        String storedValue = PreferenceManager.getDefaultSharedPreferences(context).getString(DeviceSettings.KEY_YELLOW_TORCH_BRIGHTNESS, "200"); 
         Utils.writeValue(FILE_BRIGHTNESS, storedValue);
     }
 
@@ -114,7 +114,7 @@ public class WhiteTorchBrightnessPreference extends SeekBarDialogPreference impl
             final int value = mSeekBar.getProgress() + mMinValue;
             setValue(String.valueOf(value));
             SharedPreferences.Editor editor = PreferenceManager.getDefaultSharedPreferences(getContext()).edit();
-            editor.putString(DeviceSettings.KEY_WHITE_TORCH_BRIGHTNESS, String.valueOf(value));
+            editor.putString(DeviceSettings.KEY_YELLOW_TORCH_BRIGHTNESS, String.valueOf(value));
             editor.commit();
         } else {
             restoreOldState();

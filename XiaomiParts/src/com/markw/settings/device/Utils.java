@@ -15,7 +15,7 @@
 * along with this program. If not, see <http://www.gnu.org/licenses/>.
 *
 */
-package com.syberia.settings.device;
+package com.markw.settings.device;
 
 import java.io.File;
 import java.io.FileNotFoundException;
