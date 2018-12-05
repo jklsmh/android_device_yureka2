@@ -246,7 +246,9 @@ PRODUCT_PACKAGES += \
 
 # Lights
 PRODUCT_PACKAGES += \
-    android.hardware.light@2.0-service.cmdc_taco
+    android.hardware.light@2.0-impl \
+    android.hardware.light@2.0-service \
+    lights.msm8953
 
 # LiveDisplay native
 PRODUCT_PACKAGES += \
