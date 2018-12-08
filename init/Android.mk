@@ -22,7 +22,7 @@ include $(CLEAR_VARS)
 LOCAL_C_INCLUDES := \
     system/core/base/include \
     system/core/init
-LOCAL_MODULE := libinit_markw
+LOCAL_MODULE := libinit_YUREKA2
 LOCAL_MODULE_TAGS := optional
 LOCAL_SRC_FILES := init_YUREKA2.cpp
 LOCAL_STATIC_LIBRARIES := libbase libselinux
