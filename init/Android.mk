@@ -24,7 +24,7 @@ LOCAL_C_INCLUDES := \
     system/core/init
 LOCAL_MODULE := libinit_markw
 LOCAL_MODULE_TAGS := optional
-LOCAL_SRC_FILES := init_markw.cpp
+LOCAL_SRC_FILES := init_YUREKA2.cpp
 LOCAL_STATIC_LIBRARIES := libbase libselinux
 
 include $(BUILD_STATIC_LIBRARY)

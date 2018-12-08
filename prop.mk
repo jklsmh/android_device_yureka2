@@ -1,5 +1,5 @@
 #
-# system.prop for markw
+# system.prop for YUREKA2
 #
 
 # Audio

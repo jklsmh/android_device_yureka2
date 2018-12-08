@@ -18,16 +18,16 @@
 
 set -e
 
-DEVICE=markw
-VENDOR=xiaomi
+DEVICE=YUREKA2
+VENDOR=yu
 
 # Load extract_utils and do some sanity checks
 MY_DIR="${BASH_SOURCE%/*}"
 if [[ ! -d "$MY_DIR" ]]; then MY_DIR="$PWD"; fi
 
-ARROW_ROOT="$MY_DIR"/../../..
+LINEAGE_ROOT="$MY_DIR"/../../..
 
-HELPER="$ARROW_ROOT"/vendor/arrow/build/tools/extract_utils.sh
+HELPER="$LINEAGE_ROOT"/vendor/lineage/build/tools/extract_utils.sh
 if [ ! -f "$HELPER" ]; then
     echo "Unable to find helper script at $HELPER"
     exit 1
